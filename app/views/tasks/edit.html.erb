@@ -1,0 +1,9 @@
+<h1>編集</h1>
+
+<%= form_for(@task) do |f| %>
+
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+
+  <%= f.submit "登録" %>
+<% end %>

@@ -1,0 +1,9 @@
+
+
+<h1>><%= @task.id %>の概要</h1>
+
+<%= @task.content %>
+
+<br>
+<%= link_to "編集", edit_task_path(@task.id) %>
+<%= link_to "削除", task_path(@task.id), {method:'delete'} %>
