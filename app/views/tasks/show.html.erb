@@ -1,8 +1,11 @@
 
 
 <h1><%= @task.id %>の概要</h1>
+Content: 
+<%= @task.content %> <br>
 
-<%= @task.content %>
+Status: 
+<%= @task.status %>
 
 <br>
 <%= link_to "編集", edit_task_path(@task.id) %>
